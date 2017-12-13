@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <title>街机游戏</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div id="main">
+        <div id="container">
+            <div class="instructions">
+                <a href="#" class="instruction-btn"> 游戏说明 </a>
+            </div>
+            <div class="game">
+                <div class="game-holder">
+                    <canvas id="myCanvas"></canvas>
+                    <div class="score">
+                        <div class="score-msg">分数</div>
+                        <div class="score-num">0</div>
+                        <div class="heart-msg">生命值</div>
+                        <div class="heart-num">
+                            <ul>
+                                <li><img src="images/Heart.png"></li>
+                                <li><img src="images/Heart.png"></li>
+                                <li><img src="images/Heart.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="start">
+                        <a href="#" class="start-btn">开  始</a>
+                    </div>
+                    <div class="over disappear">
+                        <div class="over-msg">很遗憾！你失败了！</div>
+                        <a href="#" class="over-btn">再玩一次</a>
+                    </div>
+                    <div class="success disappear">
+                        <div class="success-msg">通关!</div>
+                        <a href="#" class="success-btn">再玩一次</a>
+                    </div>
+                    <div class="player-select disappear">
+                        <ul>
+                            <li><img src="images/char-boy.png"></li>
+                            <li><img src="images/char-cat-girl.png"></li>
+                            <li><img src="images/char-horn-girl.png"></li>
+                            <li><img src="images/char-pink-girl.png"></li>
+                            <li><img src="images/char-princess-girl.png"></li>
+                        </ul>
+                    </div>
+                    <div class="instruction-msg disappear">
+                        <div class="instruction-main">
+                            <div class="title">游戏目标</div>
+                            <div class="rule">通过上下左右四个方向键，操作角色避开甲虫，到达河边</div>
+                            <div class="title">游戏规则</div>
+                            <div class="rule">
+                                <ul>
+                                    <li>一次过河获得积分400，积分达到1200游戏过关</li>
+                                    <li>角色与虫子相撞，失去一点生命值</li>
+                                    <li>碰撞三次后，游戏失败</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="confirm">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <a href="#" class="playerBtn">选择角色</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+    <script src="js/app-update.js"></script>
+    <script src="js/engine-update.js"></script>
 </body>
+
 </html>

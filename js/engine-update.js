@@ -87,7 +87,7 @@ let Engine = function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.render();
         });
-        if (player.y >= 55 && player.y <= 83 * 4 + 55) { //这里会涉及人物“跑”出画布的问题，在app-update.js中的playerl类做了处理。
+        if (player.y >= 55 && player.y <= 83 * 4 + 55) { //这里会涉及人物“跑”出画布的问题，在app-update.js中的player类做了处理。
             player.render();
         }
     }
